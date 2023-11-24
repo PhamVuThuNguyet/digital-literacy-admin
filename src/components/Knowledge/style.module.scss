@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  color: #fff;
+  height: 100%;
+  .left {
+    .submit-button-wrap {
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+
+      > button {
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: none;
+        padding: 8px 24px;
+        color: #fff;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all ease 0.5s;
+        float: right;
+        margin-bottom: 40px;
+
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+
+    .list-questions {
+      padding-right: 8px;
+      overflow-y: scroll;
+      .question-item {
+
+        input {
+          padding: 8px 12px;
+          color: #fff;
+          font-size: 16px;
+          background-color: transparent;
+          border-radius: 8px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          width: 100%;
+          margin-bottom: 12px;
+          margin-top: 8px;
+        }
+
+        &.question-item-child {
+          margin-top: 40px;
+
+          .question-item-child-item {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
